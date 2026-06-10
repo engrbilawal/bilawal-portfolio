@@ -882,6 +882,20 @@
       }
     }
 
+    @media (max-width: 768px) {
+      .tech-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      .stats {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      section {
+        padding: 60px 0;
+      }
+    }
+
     @media (max-width: 620px) {
 
       .grid-4,
@@ -894,6 +908,7 @@
 
       .hero {
         padding-top: 38px;
+        min-height: auto;
       }
 
       .portrait-card img {
@@ -901,7 +916,7 @@
       }
 
       section {
-        padding: 62px 0;
+        padding: 56px 0;
       }
 
       .hero-actions .btn {
@@ -912,6 +927,79 @@
         width: 50px;
         height: 50px;
         font-size: 12px;
+      }
+
+      .project-top,
+      .feature-top {
+        height: 100px;
+      }
+    }
+
+    @media (max-width: 420px) {
+      h1 {
+        font-size: 32px;
+        letter-spacing: -1px;
+      }
+
+      .lead {
+        font-size: 15px;
+      }
+
+      section {
+        padding: 44px 0;
+      }
+
+      .card {
+        padding: 18px;
+      }
+
+      .time-item {
+        padding-left: 52px;
+      }
+
+      .portrait-card img {
+        height: 320px;
+      }
+
+      .floating-icons span:nth-child(3),
+      .floating-icons span:nth-child(4) {
+        display: none;
+      }
+
+      .floating-icons span {
+        width: 40px;
+        height: 40px;
+        font-size: 10px;
+      }
+
+      .project-top,
+      .feature-top {
+        height: 80px;
+        font-size: 32px;
+      }
+
+      .project-body {
+        padding: 16px;
+      }
+
+      .feature-body {
+        padding: 16px;
+      }
+
+      .section-head {
+        margin-bottom: 28px;
+      }
+
+      .section-head h2 {
+        font-size: 24px;
+      }
+
+      .modal-card {
+        height: 70vh;
+      }
+
+      .stat strong {
+        font-size: 21px;
       }
     }
   </style>
@@ -1662,7 +1750,7 @@
       const n = encodeURIComponent(name.value),
         em = encodeURIComponent(email.value),
         m = encodeURIComponent(message.value);
-      location.href = `mailto:engrbilawalhussain@email.com?subject=Portfolio Inquiry from ${n}&body=Name: ${n}%0AEmail: ${em}%0A%0A${m}`;
+      location.href = `mailto:engrbilawalhussain@gmail.com?subject=Portfolio Inquiry from ${n}&body=Name: ${n}%0AEmail: ${em}%0A%0A${m}`;
     }
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
